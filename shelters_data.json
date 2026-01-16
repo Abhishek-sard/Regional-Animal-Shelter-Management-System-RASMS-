@@ -1,0 +1,106 @@
+{
+  "shelters": [
+    {
+      "name": "Glenelg Animal Rescue",
+      "location": "Glenelg",
+      "address": "12 Paws Street, Glenelg",
+      "revenue": 1200,
+      "adopted_count": 4,
+      "animals": [
+        { "id": "D101", "type": "Dog", "name": "Buddy", "age": 3, "breed": "Labrador", "health": "Healthy", "status": "Available" },
+        { "id": "C201", "type": "Cat", "name": "Misty", "age": 6, "breed": "Persian", "health": "Needs Vaccination", "status": "Available" },
+        { "id": "D102", "type": "Dog", "name": "Rex", "age": 8, "breed": "German Shepherd", "health": "Arthritis", "status": "In Treatment" }
+      ]
+    },
+    {
+      "name": "Adelaide Hills Shelter",
+      "location": "Stirling",
+      "address": "45 Rescue Road, Stirling",
+      "revenue": 450,
+      "adopted_count": 2,
+      "animals": [
+        { "id": "R301", "type": "Rabbit", "name": "Snowball", "age": 1, "breed": "Angora", "health": "Healthy", "status": "Available" },
+        { "id": "C202", "type": "Cat", "name": "Luna", "age": 2, "breed": "Siamese", "health": "Healthy", "status": "Available" }
+      ]
+    },
+    {
+      "name": "Port Adelaide Paws",
+      "location": "Port Adelaide",
+      "address": "88 Dockside Drive, Port Adelaide",
+      "revenue": 0,
+      "adopted_count": 0,
+      "animals": [
+        { "id": "D103", "type": "Dog", "name": "Max", "age": 4, "breed": "Bulldog", "health": "Healthy", "status": "Available" },
+        { "id": "B401", "type": "Bird", "name": "Chirpy", "age": 2, "breed": "Parrot", "health": "Healthy", "status": "Available" }
+      ]
+    },
+    {
+      "name": "Barossa Valley Rescue",
+      "location": "Tanunda",
+      "address": "12 Vine Way, Tanunda",
+      "revenue": 300,
+      "adopted_count": 1,
+      "animals": [
+         { "id": "D104", "type": "Dog", "name": "Bella", "age": 1, "breed": "Beagle", "health": "Healthy", "status": "Available" }
+      ]
+    },
+    {
+      "name": "Whyalla Welfare",
+      "location": "Whyalla",
+      "address": "5 Steel Street, Whyalla",
+      "revenue": 0,
+      "adopted_count": 0,
+      "animals": [
+        { "id": "R302", "type": "Reptile", "name": "Slinky", "age": 3, "breed": "Python", "health": "Healthy", "status": "Available" }
+      ]
+    },
+     {
+      "name": "Mount Gambier Haven",
+      "location": "Mount Gambier",
+      "address": "2 Lake Terrace, Mount Gambier",
+      "revenue": 500,
+      "adopted_count": 3,
+      "animals": [
+        { "id": "C203", "type": "Cat", "name": "Ginger", "age": 9, "breed": "Tabby", "health": "Healthy", "status": "Available" }
+      ]
+    },
+    {
+      "name": "Kangaroo Island Sanctuary",
+      "location": "Kingscote",
+      "address": "99 Island Road, Kingscote",
+      "revenue": 0,
+      "adopted_count": 0,
+      "animals": [
+         { "id": "D105", "type": "Dog", "name": "Rusty", "age": 2, "breed": "Kelpie", "health": "Needs Surgery", "status": "In Treatment" }
+      ]
+    },
+    {
+      "name": "Victor Harbor Vets",
+      "location": "Victor Harbor",
+      "address": "22 Ocean Blvd, Victor Harbor",
+      "revenue": 150,
+      "adopted_count": 1,
+      "animals": []
+    },
+    {
+      "name": "Clare Valley Care",
+      "location": "Clare",
+      "address": "7 Riesling Lane, Clare",
+      "revenue": 0,
+      "adopted_count": 0,
+      "animals": [
+        { "id": "C204", "type": "Cat", "name": "Shadow", "age": 1, "breed": "Bombay", "health": "Healthy", "status": "Available" }
+      ]
+    },
+    {
+      "name": "Murray Bridge Mates",
+      "location": "Murray Bridge",
+      "address": "15 River View, Murray Bridge",
+      "revenue": 0,
+      "adopted_count": 0,
+      "animals": [
+        { "id": "D106", "type": "Dog", "name": "Daisy", "age": 5, "breed": "Poodle", "health": "Healthy", "status": "Available" }
+      ]
+    }
+  ]
+}

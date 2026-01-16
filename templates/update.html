@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card shadow-lg border-0">
+            <div class="card-header bg-primary text-white">
+                <h4 class="m-0"><i class="fas fa-notes-medical"></i> Update Animal Status</h4>
+            </div>
+            <div class="card-body p-4">
+                <form method="POST">
+                    <div class="mb-4">
+                        <label for="animal_id" class="form-label fw-bold">Select Animal</label>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="fas fa-paw"></i></span>
+                            <select class="form-select" id="animal_id" name="animal_id" required>
+                                <option value="" selected disabled>Choose animal...</option>
+                                {% for animal in animals %}
+                                <option value="{{ animal.id }}">
+                                    {{ animal.id }} - {{ animal.name }} ({{ animal.health }})
+                                </option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="form-label fw-bold">Action</label>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="fas fa-tasks"></i></span>
+                            <select class="form-select" name="action" id="action_select" onchange="toggleInputs()"
+                                required>
+                                <option value="" selected disabled>Choose action...</option>
+                                <option value="health">Update Health</option>
+                                <option value="status">Update Adoption Status</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="mb-4" id="value_input_div">
+                        <label for="value" class="form-label fw-bold">New Value</label>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="fas fa-pen"></i></span>
+                            <input type="text" class="form-control" id="value" name="value"
+                                placeholder="e.g. Healthy, Injured, Available" required>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100 py-2 fw-bold shadow-sm">
+                        <i class="fas fa-save"></i> Update Status
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleInputs() {
+        const action = document.getElementById('action_select').value;
+        const input = document.getElementById('value');
+        if (action === 'health') {
+            input.placeholder = "Enter new health status (e.g. Healthy, Injured)";
+        } else {
+            input.placeholder = "Enter new status (e.g. In Treatment, Available)";
+        }
+    }
+</script>
+{% endblock %}
