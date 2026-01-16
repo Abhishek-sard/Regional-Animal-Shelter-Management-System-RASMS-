@@ -1,0 +1,40 @@
+
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card shadow-lg border-0">
+            <div class="card-header bg-success text-white">
+                <h4 class="m-0"><i class="fas fa-heart"></i> Adopt an Animal</h4>
+            </div>
+            <div class="card-body p-4">
+                <div class="alert alert-info border-0 shadow-sm">
+                    <i class="fas fa-info-circle"></i> Adoption fees help us support more animals!
+                </div>
+                <form method="POST">
+                    <div class="mb-4">
+                        <label for="animal_id" class="form-label fw-bold">Select Animal to Adopt</label>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="fas fa-paw"></i></span>
+                            <select class="form-select" id="animal_id" name="animal_id" required>
+                                <option value="" selected disabled>Choose animal...</option>
+                                {% for animal in animals %}
+                                <option value="{{ animal.id }}">
+                                    {{ animal.id }} - {{ animal.name }} ({{ animal.type }}, {{ animal.age }} yrs)
+                                </option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <div class="form-text mt-2"><i class="fas fa-calculator"></i> Fees are calculated automatically:
+                            Dogs ($200-300), Cats ($150-250), Others ($100-150).</div>
+                    </div>
+
+                    <button type="submit" class="btn btn-success w-100 py-3 fw-bold shadow-sm">
+                        <i class="fas fa-check-circle"></i> Process Adoption
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
