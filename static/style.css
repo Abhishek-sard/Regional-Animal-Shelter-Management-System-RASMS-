@@ -1,8 +1,63 @@
-:root{
-    --primary-color: #2c3e50;
-    --secondary-color: #1abc9c;
-    --font-color: #e74c3c;
-    --background-color: #ecf0f1;
-    --card-bg: #ffffff;
-    --text-color: #34495e;
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #1abc9c;
+  --font-color: #e74c3c;
+  --background-color: #ecf0f1;
+  --card-bg: #ffffff;
+  --text-color: #34495e;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+  background-color: var(--primary-color) !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.navbar-brand {
+  font-weight: bold;
+  color: var(--secondary-color) !important;
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s;
+  background-color: var(--card-bg);
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.btn-primary {
+  background-color: var(--secondary-color);
+  border-color: #16a085;
+}
+.badge {
+  padding: 0.5em 0.8em;
+  border-radius: 20px;
+}
+
+.jumbotron {
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  color: white;
+  padding: 4rem 2rem;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+}
+
+.table-hover tbody tr:hover {
+  background-color: rgba(26, 188, 156, 0.1);
+}
+
+.stats-card {
+  border-left: 5px solid var(--secondary-color);
 }
